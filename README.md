@@ -1,25 +1,33 @@
+* [Pawn pesudo code](#pawn-pesudo-code)
+* [Bishop pesudo code](#bishop-pesudo-code)
+* [Knight pesudo code](#knight-pesudo-code)
+* [Rook pesudo code](#rook-pesudo-code)
+* [King pesudo code](#king-pesudo-code)
+* [Queen pesudo code](#queen-pesudo-code)
+
+
 > So, my logic will be like this  
 <span style="color:#ff0;"> </span>
 <span style="color:#0f0;"> </span>
 
-* ## <span style="color:#0f0;"> The Player (first click): </span>
+* ## <span style="color:#0f0;"> The Player (*first click*) </span>
     *	The board in the screen player will use the mouse to select a piece  
-* ## <span style="color:#ff0;">My work (on the first click): </span>
+* ## <span style="color:#ff0;">My work (*on the first click*) </span>
     *	take that selected piece tag >> let’s say it is a **pawn**  
     *	In the Board Manager scripts, it will load the “pawn class script”  
     *	Pawn script check tells you how the pawn will behave and move 
     *	And let you know all the valid moves and invalid moves  
     *	Then the Board manager decides based on this information what to do  
 
-* ##  <span style="color:#0f0;"> The Player (second click):  </span>
+* ##  <span style="color:#0f0;"> The Player (*second click*)  </span>
     *	select another empty or non-empty square let’s say he selects an empty square first  
-* ## <span style="color:#ff0;"> My work (*on second click* <span style="color:#990;">(empty square)</span>):  </span>
+* ## <span style="color:#ff0;"> My work (*on second click* <span style="color:#990;">(empty square)</span>)  </span>
     *	Check if the selected square is empty or not if ok then continue  
     *	From the loaded piece script is this move legal?
     *	If yes move the previously selected piece to the selected square
     *	else show a message saying illegal move and tell why?
     *	Is there a checkmate already? is this piece pinned and moving it will cause a checkmate? is this an illegal move? **Tricky important**
-* ## <span style="color:#ff0;"> My work (*on second click* <span style="color:#990;"> (non-empty square) </span>):  </span>
+* ## <span style="color:#ff0;"> My work (*on second click* <span style="color:#990;"> (non-empty square) </span>)  </span>
     *	From the loaded piece script is this move legal?
     *	If yes move the previously selected piece to the selected square
     *	But before moving the piece at this position outside of the board
